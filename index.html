@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CI/CD Demo</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    color:white;
+}
+
+.container{
+    text-align:center;
+    background: rgba(0,0,0,0.3);
+    padding:40px;
+    border-radius:10px;
+}
+
+h1{
+    font-size:40px;
+}
+
+p{
+    font-size:18px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:white;
+    color:#333;
+}
+
+button:hover{
+    background:#f1f1f1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 CI/CD Deployment Successful</h1>
+
+<p>This webpage is automatically deployed using GitHub Actions.</p>
+
+<p>Every time code is pushed to GitHub, the pipeline builds and deploys the website.</p>
+
+<button onclick="showMessage()">Click Me</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "🎉 GitHub CI/CD Pipeline is Working!";
+}
+
+</script>
+
+</body>
+</html>
