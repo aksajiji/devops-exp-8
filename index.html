@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CI/CD Demo by Aksa</title>
+<title>CI/CD Demo by Aksa Jiji Thomas</title>
 
 <style>
 body{
@@ -22,10 +22,16 @@ body{
     background: rgba(0,0,0,0.3);
     padding:40px;
     border-radius:10px;
+    max-width:600px;
 }
 
 h1{
-    font-size:40px;
+    font-size:38px;
+}
+
+h2{
+    font-size:22px;
+    margin-bottom:20px;
 }
 
 p{
@@ -45,6 +51,12 @@ button{
 button:hover{
     background:#f1f1f1;
 }
+
+.footer{
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.8;
+}
 </style>
 </head>
 
@@ -54,13 +66,19 @@ button:hover{
 
 <h1>🚀 CI/CD Deployment Successful</h1>
 
-<p>This webpage is automatically deployed using GitHub Actions by Aksa.</p>
+<h2>DevOps CI/CD Demo by <br> Aksa Jiji Thomas</h2>
 
-<p>Every time code is pushed to GitHub, the pipeline builds and deploys the website.</p>
+<p>This webpage is automatically deployed using GitHub Actions.</p>
+
+<p>Every time code is pushed to GitHub, the pipeline builds and deploys the website automatically.</p>
 
 <button onclick="showMessage()">Click Me</button>
 
 <p id="msg"></p>
+
+<div class="footer">
+Developed by <b>Aksa Jiji Thomas</b>
+</div>
 
 </div>
 
